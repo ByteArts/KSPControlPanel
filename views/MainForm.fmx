@@ -1,0 +1,85 @@
+object formName: TformName
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 362
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object grpViewModelTests: TGroupBox
+    Position.X = 12.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 117.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'ViewModel'
+    TabOrder = 2
+    object btnConnect: TButton
+      Position.X = 24.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Connect to Server'
+      OnClick = btnConnectClick
+    end
+    object btnDisconnect: TButton
+      Position.X = 24.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Disconnect from Server'
+    end
+  end
+  object grpHost: TGroupBox
+    Position.X = 8.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Host Settings'
+    TabOrder = 3
+    object lblStatus: TLabel
+      Position.X = 20.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 317.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Leading
+      Text = 'Status:'
+    end
+    object numPort: TNumberBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Cursor = crIBeam
+      Max = 65535.000000000000000000
+      Value = 50000.000000000000000000
+      Position.X = 128.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object editHost: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Text = '192.168.1.101'
+      Position.X = 20.000000000000000000
+      Position.Y = 20.000000000000000000
+    end
+  end
+  object btnStage: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 260.000000000000000000
+    TabOrder = 5
+    Text = 'STAGE'
+    OnClick = btnStageClick
+  end
+end
